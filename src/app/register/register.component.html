@@ -1,0 +1,26 @@
+
+<div>
+    <h1>Hello Welcome </h1>
+      <h3>Create An Account</h3>
+       <form (ngsubmit)="onRegister() ">
+         <div>
+          <label for="name">Full name</label>
+          <input  required  type="text">
+          <br><br>
+          <label for="contact">Contact no</label>
+          <input  required  type="text">
+          <br><br>
+           <label for="email">Email</label>
+           <input  required  type="text">
+           <br><br>
+           <label for="password">Password</label>
+           <input  type="password">
+           <br><br>
+         </div>
+         <button>Submit</button>
+         <br><br>
+         
+         <span>Already have an account? 
+         <a routerLink="/login">login</a></span>
+       </form>
+   </div>

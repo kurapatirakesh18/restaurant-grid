@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'restaurant';
+home: any;
+restaurantGrid: any;
 }

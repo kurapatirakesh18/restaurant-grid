@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="logo">RESTAURANTS</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/">Login</button>
+    <button mat-button routerLink="/about">About</button>
+    <button mat-button routerLink="/restaurant" >Add restaurant</button>
+  
+  </mat-toolbar-row>
+</mat-toolbar>
+<nav class="navbar navbar-dark bg-dark">
+</nav>
+
+
+
+<div style="width: 100%; height: 500px;">
+  <ag-grid-angular 
+    style="width: 100%; height: 100%;" 
+    class="ag-theme-alpine"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"
+    [pagination]="true">
+  </ag-grid-angular>
+</div>
+
+<div class="ag-theme-alpine" style="height: 400px; width: 600px;">
+  <ag-grid-angular 
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs">
+  </ag-grid-angular>
+</div>
+
+
+
